@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Autocomplete from './components/Autocomplete/Autocomplete';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+// const stringItems = ["ACC", "Accent", "Ace DASL", "ACL2", "ACT-lll", "Ation!"];
+const mixedItems = ["ACC", null, 99.25, {color: 'blue', size: 'big'}, new Date(), [1,3,'Eve'], 0, true, false, undefined, '', '\\^.'];
+
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='autocomplete-container'>
+      <Autocomplete items={mixedItems}/>
+    </div>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
