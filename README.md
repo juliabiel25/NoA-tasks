@@ -8,7 +8,7 @@ were I to pick it back up right now.
 ## [The fake store app](https://github.com/juliabiel25/fake-store) 
 This is the more polished app I'd like to present, although the idea behind it is rather simple.
 In it's core design, it is a simple API data fetching app. Information about the products is fetched from an [API](https://fakestoreapi.com/) endpoint and is then displayed on the main page.
-The products can be viewed in more detail on a separate page view, filtered by their respective categories and added to/remove from the cart.
+The products can be viewed in more detail on a separate page view, filtered by their respective categories and added to/removed from the cart.
 It's a single page application using a react router for simulating page navigation.
 
 ### The good
@@ -30,7 +30,9 @@ Ultimatlely, it is supposed to allow for easy date-time range selections for any
 As of right now, only the date selection part has been implemented.
 
 ### The good
-- The date selection assignment seems to work according to initial design and the date ranges are generated properly - Any selection can be overwritten by another.
+- Everything is fully typescript-ified
+- The date selection assignment seems to work according to initial design and the date ranges are generated properly
+- The project is using CSS-in-JS which makes controlling the dynamically changing styles easier
 
 ### The bad
 - The biggest issue I've stumbled upon with this project so far is likely the prop drilling. I end up passing quite a lot of information down the component tree with no real use in any of the middleware components, which makes the code much less readable. This is something I know can be fixed with Redux or the react context API but I'm not yet sure if it's the best solution for my (rather small) use case so I'm still at the research stage. 
