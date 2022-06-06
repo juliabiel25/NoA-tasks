@@ -36,6 +36,7 @@ As of right now, only the date selection part has been implemented.
 
 ### The bad
 - The biggest issue I've stumbled upon with this project so far is likely the prop drilling. I end up passing quite a lot of information down the component tree with no real use in any of the middleware components, which makes the code much less readable. This is something I know can be fixed with Redux or the react context API but I'm not yet sure if it's the best solution for my (rather small) use case so I'm still at the research stage. 
+- The overall graphic design is not quite there yet as I've decided to focus on handling the logic first.
 
 ### Plans for future improvements
 - General responsivness and UX improvements (among them: Fixing the random color generator to generate colors that wouldn't be too dark or too similar to one another as it sometimes happens currently)
