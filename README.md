@@ -12,8 +12,8 @@ The products can be viewed in more detail on a separate page view, filtered by t
 It's a single page application using a react router for simulating page navigation.
 
 ### The good
+- minimalistic & clean, responsive design
 - the project accounts for long API response time with loading animations
-- responsive design
 
 ### The bad
 - the project is not using typescript - something I now deem to be very helpful and would likely make the project more scalable.
